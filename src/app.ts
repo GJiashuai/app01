@@ -28,7 +28,7 @@ app.use(AppRouter.routes()).use(AppRouter.allowedMethods())
 // Error Handler
 app.use(responseHandler)
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0',() => {
   console.log(`http://${AddressIP.address()}:${PORT} 已启动`)
 })
 
